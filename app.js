@@ -24,7 +24,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 //***Toggle Seed***
-//seedDB();
+seedDB();
 
 // PASSPORT CONFIG
 app.use(require("express-session")({
@@ -51,8 +51,10 @@ app.use("/listitems", listitemRoutes);
 app.use("/listitems/:id/comments", commentRoutes);
 
 
-
+<!--
  app.listen(8080, '192.168.1.2', function(){
  	console.log("Server started!");
  });
+-->
 
+app.listen(3000, () => console.log('Server running on port 3000'))
