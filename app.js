@@ -50,11 +50,4 @@ app.use("/", indexRoutes);
 app.use("/listitems", listitemRoutes);
 app.use("/listitems/:id/comments", commentRoutes);
 
-
-<!--
- app.listen(8080, '192.168.1.2', function(){
- 	console.log("Server started!");
- });
--->
-
 app.listen(3000, () => console.log('Server running on port 3000'))
